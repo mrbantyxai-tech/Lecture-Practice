@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Html Lecture Typography Tags & Selection Tags
+	</title>
+</head>
+<body>
+
+	<!-- HTML textarea Tag -->
+
+	<textarea rows="21" cols="12" style="resize: vertical; "> <!-- its Have 4 resize 1.vertical 2.horizontal 3.none 4.both-->
+		its Resizable and Can Fix Vertically & Horizontally
+	</textarea>
+
+	<!-- HTML select Tag -->
+
+	<select id="" class="">
+		<option value="M2">BMW M2 Competition</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+		<option value="M3">BMW M3 Competition</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+		<option value="M5">BMW M5 Competition</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+		<option value="Land Cruiser">Toyota Land Cruiser</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+		<option value="EECO" selected>Maruti Suzuki EECO</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry --> <!-- selected Tag used For See Data in First As A Showcase -->
+	</select>
+
+	<!-- HTML optgroup Tag -->
+
+	
+		<select id="" class="">
+			<optgroup label="Cars"> <!-- The optgroup is used for divide types of option & label attribute for Heading of optgroup-->
+				<option value="M2">BMW M2 Competition</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="M3">BMW M3 Competition</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="M5">BMW M5 Competition</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="Land Cruiser">Toyota Land Cruiser</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="EECO" selected>Maruti Suzuki EECO</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry --> <!-- selected Tag used For See Data in First As A Showcase -->
+			</optgroup>
+
+			<optgroup label="Bikes">
+				<option value="M2">BMW S1000RR</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="M3">BMW M1000RR</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="M5">BMW RR310</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="Land Cruiser">Yamaha R1M</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry -->
+				<option value="EECO" selected>Suzuki Hayabusa</option> <!-- Value == For Back End Understanding Purpose But imp and Necceserry --> <!-- selected Tag used For See Data in First As A Showcase -->
+			</optgroup>
+		</select>
+
+	<!-- datalist Tag in HTML -->
+
+		<input list="Cars" name="Cars">
+			<datalist id="Cars"> <!-- Input's Name & datalist's id Must Be Same -->
+				<option value="M2"></option> <!-- Only Value enogh For Showing Properties to User -->
+				<option value="M3"></option> <!-- Only Value enogh For Showing Properties to User -->
+				<option value="M5"></option> <!-- Only Value enogh For Showing Properties to User -->
+				<option value="Land Cruiser"></option> <!-- Only Value enogh For Showing Properties to User -->
+				<option value="EECO"></option> <!-- Only Value enogh For Showing Properties to User -->
+			</datalist>
+
+	<!-- HTML Formatting Tags (inline Tags & also Must Use For TYPOGRAPHY) -->
+
+		<b>For Bold</b>
+		<strong>Same as a For Bold The Text, But its Proffessional & For Bold imp text</strong>
+		<i>For italic</i>
+		<em>Same as a i tag</em>
+		<mark>For Highlight The Text</mark>
+		<center>For Center The Properties (But its Outdated Way) its Block tag</center>
+		<style>
+			{
+				text-align: center; 
+			}
+		</style> <!-- You Can Use Center Method From Using CSS (Style) its Better Than Center Tag-->
+
+		<small>Small The Text</small>
+		<big>Big The Text</big>
+		<del>For Delete The Text From Any Typography</del>
+		<ins>Insert or added Text</ins>
+		<s>For Deleted Text</s>
+		<u>For Underline The Text</u>
+		r<sub>2</sub> <!-- For Superscript -->
+		H<sub>2</sub>O
+</body>
+</html>
