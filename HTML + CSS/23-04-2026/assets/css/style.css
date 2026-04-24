@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+	/* margin: 0; */
+	padding: 0;
+}
+
+/* h1 , p{
+	display: inline;
+} */
+
+.maindiv{
+	/* display: flex; */
+	display: grid;
+	/* grid-template-columns: repeat(6 , 1fr); */
+}
+
+.box1{
+	height: 200px;
+	width: 200px;
+	/* display: inline-block; */
+	/* display: inline; */
+	/* display: block; */
+	display: flex;
+	background-color: gray;
+	border: 1px solid black;
+}
+
+.hidden{
+	background-color: black;
+	color:white;
+	height: 200px;
+	/* display: none; */
+	/* visibility: hidden; */
+}
+
+/* css pesudo class selector */
+
+/* 
+h1:first-child{
+	background-color: green;
+	color:white;
+} 
+*/
+
+/* h1:last-child{
+	background-color: red;
+	color:white
+} */
+
+/* h1:first-of-type{
+	background-color: green;
+	color:white;
+} */
+
+/* h1:last-of-type{
+	background-color: red;
+	color:white;
+} */
+
+/* h1:only-child{
+	background-color: red;
+	color:white;
+} */
+
+/* h1:only-of-type{
+	background-color: green;
+	color:white;
+} */
+
+/* h1:nth-child(4){
+	background-color: red;
+	color:white;
+} */
+
+/* h1:nth-of-type(3){
+	background-color: green;
+	color:white;
+} */
+
+/* h1:nth-last-child(2){
+	background-color: red;
+	color:white;
+} */
+
+/* h1:nth-last-of-type(7){
+	background-color: green;
+	color:white;
+} */
+
+div:not(.box){
+	background-color: purple;
+}
