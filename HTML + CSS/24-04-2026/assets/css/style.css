@@ -1,0 +1,97 @@
+/* Link Selector */
+
+/* a:link{
+	background-color: blue;
+	color:white;
+}
+
+a:active{
+	background-color: green;
+}
+
+a:hover{
+	background-color: orange;
+}
+
+a:visited{
+	background-color: black;
+} */
+
+	/* :is(h1 , p , span){
+		background-color: black;
+		color:white;
+		margin-bottom: 20px;
+	} */
+
+:where(.para){
+	color:orange;
+}
+
+p:has(span){
+	border:2px solid blue;
+}
+
+h1::after{
+	content: "🍔";
+}
+
+h1::before{
+	content:"🍟";
+}
+
+p::first-line{
+	background-color: yellow;
+}
+
+p::first-letter{
+	font-size: 40px;
+}
+
+p::selection{
+	background-color: black;
+	color:white
+}
+
+input::placeholder{
+	color:orange
+}
+
+li::marker{
+	color:purple
+}
+
+
+/* Attribute selector */
+
+/* a[href]{
+	text-decoration: none;
+	color:gray
+} */
+
+/* a[href="http://www.instagram.com"]{
+	background-color: brown;
+}
+
+a[target="_blank"]{
+	background-color: blueviolet;
+}
+
+a[class|="box"]{
+	background-color: orange;
+} */
+
+/* a[class~="link"]{
+	background-color: orange;
+} */
+
+/* a[target^="_"]{
+	background-color: orange;
+} */
+
+/* a[target$="k"]{
+	background-color: orange;
+} */
+
+/* a[target*="a"]{
+	background-color: orange;
+} */
