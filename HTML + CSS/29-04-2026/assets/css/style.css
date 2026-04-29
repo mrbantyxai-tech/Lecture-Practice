@@ -1,0 +1,99 @@
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+}
+
+/* CSS Flexbox Properties */
+
+.main{
+    height: 500px;
+    width: 1200px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main > div{
+ /* flex-grow: 1; */
+    flex: 1 0 0%;
+
+ border:1px solid black;
+}
+
+.main > div{
+    /* flex-basis: 200px; */
+}
+
+.main .box-1{
+    /* flex-basis: 100px; */
+    /* flex-shrink: 4; */
+}
+
+.main .box-2{
+    /* flex-basis: 100px; */
+    /* flex-shrink: 5; */
+}
+
+.main .box-3{
+    /* flex-basis: 100px; */
+    /* flex:grow shrink basis; */
+}
+
+
+/* CSS overflow properties */
+
+
+.content{
+    height: 300px;
+    width: 300px;
+    border:2px solid black;
+    overflow-y: hidden;
+}
+
+p{
+    /* text-wrap: nowrap; */
+    /* white-space: nowrap; */
+}
+
+.img-profile{
+    height: 200px;
+    width: 200px;
+    border:1px solid black;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: -50px;
+}
+
+.profile_card{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border:2px solid gray;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.profile_text{
+    margin-left: auto;
+}
+
+.img-profile img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    object-position:left;
+}
